@@ -1,9 +1,6 @@
 name: interop
 on:
-  schedule:
-   # Every 12h, at 15 minutes past the hour
-   # This makes sure that the cleanup cron job can run first.
-  - cron: "15 */12 * * *"
+  workflow_dispatch
 
 jobs:
   config:
